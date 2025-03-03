@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('fonts/horizon.otf') format('opentype'); /* Adjust this path if necessary */
+}
+
+body {
+    font-family: 'Horizon', sans-serif; /* Use the font for body text */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    background-color: #333; /* Background color for the nav bar */
+}
+nav ul li {
+    margin: 0; /* No margin between items */
+}
+
+nav ul li a {
+    display: block; /* Make the entire area clickable */
+    padding: 14px 20px; /* Add padding */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Change background on hover */
+}
