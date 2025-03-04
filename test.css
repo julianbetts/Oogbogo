@@ -114,7 +114,7 @@ section#description {
         display: none;
     }
 
-    .nabar-links.open {
+    .navbar-links.open {
         display: block;
     }
     .navbar-links ul {
