@@ -131,8 +131,12 @@ section#description {
     font-family: 'Horizon', sans-serif;
     color: var(--light-text);
     font-size: 2rem;
-    text-align: center; /* Centers the title */
     margin-top: 20px;
+}
+
+
+.stream-navbar ul {
+    list-style-type: none; /* Remove the default bullet points */
 }
 
 .track-listing-container {
@@ -156,6 +160,14 @@ section#description {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.stream-navbar {
+    display: none;
+}
+
+.stream-navbar.open {
+    display: block; /* Show the navigation links when the 'open' class is added */
 }
 
 @media screen and (max-width: 600px) {

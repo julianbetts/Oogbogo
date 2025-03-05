@@ -1,6 +1,7 @@
 const responsiveMenuButton = document.getElementById('responsiveMenuToggleButton')
-
 const navBarLinks = document.querySelector('.navbar-links')
+const streamToggleButton = document.getElementById('stream-toggle-button')
+const streamNavBar = document.querySelector('.stream-navbar')
 
 responsiveMenuButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('open')
@@ -14,4 +15,8 @@ allNavLinks.forEach(link => {
         navBarLinks.classList.remove('open')
         responsiveMenuButton.classList.remove('open')
     })
+})
+
+streamToggleButton.addEventListener('click', () => {
+    streamNavBar.classList.toggle('open')
 })
