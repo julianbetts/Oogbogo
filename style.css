@@ -65,7 +65,7 @@ section#description {
     text-decoration: none;
 }
 
-#releases {
+.main-section {
     color: var(--white);
     display: flex;
     justify-content: center; /* Horizontally centers the content */
