@@ -3,76 +3,137 @@
     src: url('assets/fonts/horizon.otf') format('opentype'); /* Adjust this path if necessary */
 }
 
+:root{
+    --light-text: rgb(217, 215,  215);
+    --white: rgb(254, 253, 253); 
+}
+
 body {
+    margin: 0;
     font-family: 'Horizon', sans-serif; /* Use the font for body text */
 }
 
-h1{
-    text-align: center;
+section#hero {
+    background-image: url(./assets/images/mushroom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center
 }
 
-.navbar ul {
-    list-style-type: none;
-    background-color: #333;
-    padding: 0px;
-    margin: 0px;
-    display: flex; /* Use flexbox to arrange items horizontally */
+section#hero h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;    
-    display: block; /* Make the entire area clickable */
-    text-align: center;
+section#description {
+    padding: 1rem
 }
 
-.navbar a:hover {
-    background-color: #575757; /* Change background on hover */
-}
-
-.navbar li {
-    margin: 0; /* No margin between items */
-}
-
-/* RELEASE SECTION */
-
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.album {
-    position: relative; /* Allows for absolute positioning of img */
-    overflow: hidden; /* Ensures images fit within their container */
-    width: 100%; /* Ensure full width for the album block */
-}
-
-.album img {
+.navbar {
+    position: fixed;
     width: 100%;
-    height: auto; /* Keep aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb( 0, 0, 0, 0.2);
+}
+
+.navbar .brand {
+    padding: .75rem 1rem;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.navbar-links ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+#responsiveMenuToggleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#responsiveMenuToggleButton svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--light-text);
+    position-try: absolute;
+    top: .75rem;
+    right: .75rem;
+}
+
+#responsiveMenuToggleButton .openIcon {
     display: block;
 }
 
-.album img {
-    width: 100%;
-    height: 100%; /* Make image fill the container */
-    object-fit: cover; /* Ensure image covers the square area */
-    /* border-radius: 8px; Optional: adds rounded corners */
-    aspect-ratio: 1; /* Makes the image a perfect square */
+#responsiveMenuToggleButton .closeIcon {
+    display: none;
 }
 
-h3 {
-    text-align: center;
-    margin: 20px 0;
+#responsiveMenuToggleButton.open .openIcon {
+    display: none;
 }
 
+#responsiveMenuToggleButton.open .closeIcon {
+    display: block;
+}
 
+@media screen and (max-width: 600px) {
 
+    #responsiveMenuToggleButton {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center; /* Vertically center the button content */
+        justify-content: center; /* Horizontally center the icons inside the button */
+        height: 2.5rem; /* Define the height of the button */
+        width: 2.5rem;  /* Define the width of the button */
+        position: absolute; /* To position the button on the right side */
+        top: 50%; /* Center the button vertically */
+        right: 1rem; /* Align the button to the right side */
+        transform: translateY(-50%); /* Adjust to perfectly center the button vertically */
+        /* display: block;   this was original code */
+    }
 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.open {
+        display: block;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
 
