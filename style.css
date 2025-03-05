@@ -14,9 +14,10 @@ body {
     font-family: 'Horizon', sans-serif; /* Use the font for body text */
 }
 
-/* .album-title {
-
-} */
+.album-title {
+    font-family: 'Horizon', sans-serif; /* Use the font for body text */
+    color: var(--light-text);
+}
 
 section#hero {
     background-image: url(./assets/images/mushroom.jpg);
