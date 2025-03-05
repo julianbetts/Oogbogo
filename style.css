@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: black;
     margin: 0;
     font-family: 'Horizon', sans-serif; /* Use the font for body text */
 }
@@ -102,19 +103,7 @@ section#description {
 @media screen and (max-width: 600px) {
 
     #responsiveMenuToggleButton {
-        background-color: transparent;
-        border: 0;
-        cursor: pointer;
-        display: flex;
-        align-items: center; /* Vertically center the button content */
-        justify-content: center; /* Horizontally center the icons inside the button */
-        height: 2.5rem; /* Define the height of the button */
-        width: 2.5rem;  /* Define the width of the button */
-        position: absolute; /* To position the button on the right side */
-        top: 50%; /* Center the button vertically */
-        right: 1rem; /* Align the button to the right side */
-        transform: translateY(-50%); /* Adjust to perfectly center the button vertically */
-        /* display: block;   this was original code */
+        display: block;
     }
 
     .navbar {
