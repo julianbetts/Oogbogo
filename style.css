@@ -14,20 +14,17 @@ body {
     font-family: 'Horizon', sans-serif; /* Use the font for body text */
 }
 
-.album-title {
-    font-family: 'Horizon', sans-serif; /* Use the font for body text */
-    color: var(--light-text);
-}
 
-section#hero {
-    background-image: url(./assets/images/mushroom.jpg);
+
+/* section#hero {
+    background-image: url(./assets/images/bogo-art.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items:center
-}
+} */
 
 section#hero h1 {
     padding: 1rem;
@@ -73,6 +70,8 @@ section#description {
 .main-section {
     color: var(--white);
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
+
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
     min-height: 20vh; /* Takes at least full viewport height */
@@ -113,6 +112,33 @@ section#description {
 #responsiveMenuToggleButton.open .closeIcon {
     display: block;
 }
+
+/* albums files */
+
+.album-title {
+    font-family: 'Horizon', sans-serif;
+    color: var(--light-text);
+    font-size: 2rem;
+    text-align: center; /* Centers the title */
+    margin-top: 20px;
+}
+
+.track-listing-container {
+    position: relative; /* Keep it relative for better control */
+
+;
+}
+
+.track-listing-container ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding-left: 0; /* Remove left padding from the list */
+
+}
+
+.track-listing-container ol {
+    margin: 5px 0; /* Space between track numbers */
+}
+
 
 @media screen and (max-width: 600px) {
 
