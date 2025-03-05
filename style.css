@@ -65,6 +65,15 @@ section#description {
     text-decoration: none;
 }
 
+#releases {
+    color: var(--white);
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    min-height: 20vh; /* Takes at least full viewport height */
+
+}
+
 #responsiveMenuToggleButton {
     background-color: transparent;
     border: 0;
