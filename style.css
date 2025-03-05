@@ -134,6 +134,11 @@ section#description {
     margin-top: 20px;
 }
 
+.credits {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
 
 .stream-navbar ul {
     list-style-type: none; /* Remove the default bullet points */
@@ -167,8 +172,11 @@ section#description {
 }
 
 .stream-navbar.open {
-    display: block; /* Show the navigation links when the 'open' class is added */
+    display: flex; /* Show the navigation links when the 'open' class is added */
+    flex-direction: row;
 }
+
+
 
 @media screen and (max-width: 600px) {
 
