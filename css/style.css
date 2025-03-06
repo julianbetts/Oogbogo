@@ -115,16 +115,15 @@ section#description {
 }
 
 /* albums files */
+
 @media (min-width: 600px) {
 
 }
 .album-cover {
+    align-items: center; /* Center align everything */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align everything */
     margin-top: 80px; /* Push it down below the navbar */
-
-
 }
 
 .album-title {
