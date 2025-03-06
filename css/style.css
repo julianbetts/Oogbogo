@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('/assets/fonts/horizon.otf') format('opentype'); 
+}
+
+:root{
+    --light-text: rgb(217, 215,  215);
+    --white: rgb(254, 253, 253); 
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Horizon', sans-serif; /* Use the font for body text */
+}
+
+
+
+/* section#hero {
+    background-image: url(./assets/images/bogo-art.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items:center
+} */
+
+section#hero h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+section#description {
+    padding: 1rem
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb( 0, 0, 0, 0.2);
+}
+
+.navbar .brand {
+    padding: .75rem 1rem;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.navbar-links ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.main-section {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    min-height: 20vh; /* Takes at least full viewport height */
+
+}
+
+#responsiveMenuToggleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#responsiveMenuToggleButton svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--light-text);
+    position-try: absolute;
+    top: .75rem;
+    right: .75rem;
+}
+
+#responsiveMenuToggleButton .openIcon {
+    display: block;
+}
+
+#responsiveMenuToggleButton .closeIcon {
+    display: none;
+}
+
+#responsiveMenuToggleButton.open .openIcon {
+    display: none;
+}
+
+#responsiveMenuToggleButton.open .closeIcon {
+    display: block;
+}
+
+/* albums files */
+
+@media (min-width: 600px) {
+
+}
+.album-cover {
+    align-items: center; /* Center align everything */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 80px; /* Push it down below the navbar */
+}
+
+.album-title {
+    font-family: 'Horizon', sans-serif;
+    color: var(--light-text);
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.credits {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.stream-navbar ul {
+    list-style-type: none; /* Remove the default bullet points */
+}
+
+.track-listing-container {
+    position: relative; /* Keep it relative for better control */
+
+;
+}
+
+.track-listing-container ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding-left: 0; /* Remove left padding from the list */
+
+}
+
+.track-listing-container ol {
+    margin: 5px 0; /* Space between track numbers */
+}
+
+.flex-container {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.stream-navbar {
+    display: none;
+}
+
+.stream-navbar.open {
+    display: flex; /* Show the navigation links when the 'open' class is added */
+    flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    #responsiveMenuToggleButton {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.open {
+        display: block;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
