@@ -14,7 +14,7 @@ layout: "base.html"
             </div>
         </div>
     </a>
-    <a href="https://julianbetts.github.io/to-do-list.js/" class="album-card">
+    <a href="albums/culprit" class="album-card">
         <div class="content">
             <img src="/assets/images/culprit.jpg" alt="culprit" height="390" width="390"></img>
             <div class="card-body">
@@ -22,7 +22,7 @@ layout: "base.html"
             </div>
         </div>
     </a>
-    <a href="https://julianbetts.github.io/to-do-list.js/" class="album-card">
+    <a href="albums/live" class="album-card">
         <div class="content">
             <img src="/assets/images/live.jpg" alt="live" height="390" width="390"></img>
             <div class="card-body">
@@ -30,7 +30,7 @@ layout: "base.html"
             </div>
         </div>
     </a>
-    <a href="https://julianbetts.github.io/to-do-list.js/" class="album-card">
+    <a href="/albums/ep2/" class="album-card">
         <div class="content">
             <img src="/assets/images/ep2.jpg" alt="ep2" height="390" width="390"></img>
             <div class="card-body">
@@ -38,7 +38,7 @@ layout: "base.html"
             </div>
         </div>
     </a>
-    <a href="https://julianbetts.github.io/to-do-list.js/" class="album-card">
+    <a href="/albums/ep1/" class="album-card">
         <div class="content">
             <img src="/assets/images/ep1.jpg" alt="ep1" height="390" width="390"></img>
             <div class="card-body">
