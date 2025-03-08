@@ -57,28 +57,6 @@ table {
     font-weight: bold;
   }
 
-@media screen and (max-width: 600px) {
-table, thead, tbody, th, td, tr {
-    display: block;
-}
-
-th {
-    text-align: left;
-}
-
-td {
-    text-align: left;
-    padding-left: 50%;
-    position: relative;
-}
-
-td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    font-weight: bold;
-}
-}
 
 section#hero h1 {
     padding: 1rem;
@@ -170,9 +148,6 @@ section#description {
 
 /* albums files */
 
-@media (min-width: 600px) {
-
-}
 .album-cover {
     align-items: center; /* Center align everything */
     display: flex;
@@ -184,7 +159,7 @@ section#description {
     font-family: 'Horizon', sans-serif;
     color: var(--light-text);
     font-size: 2rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .credits {
