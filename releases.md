@@ -3,9 +3,9 @@ title: "Home"
 layout: "base.html"
 ---
 <section class="main-section">
-    <h1>Albums</h1>
+    <h1 id="albums-header">Albums</h1>
 </section>
-<div class="flex-container">
+<figure class="grid-container">
     <a href="/albums/plastic/" class="album-card">
         <div class="content">
             <img src="/assets/images/plastic.jpg" alt="plastic" height="390" width="390"></img>
@@ -46,7 +46,7 @@ layout: "base.html"
             </div>
         </div>
     </a>
-</div>
+</figure>
 
 
 
