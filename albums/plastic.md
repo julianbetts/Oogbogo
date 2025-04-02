@@ -19,7 +19,7 @@ layout: "base.html"
         <!-- <div id="buy-toggle-button">
             <button><a href="https://oogbogo.bandcamp.com/merch">Buy</a></button>
         </div> -->
-        <di>
+        <div>
             <button><a href="https://open.spotify.com/artist/3gcJTounp4NCELEkzR8oI1">
             <img src="/assets/images/spotify.png" alt="spotify" height="40" width="40"></img></a></button>
         </div>

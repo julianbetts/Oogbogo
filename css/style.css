@@ -43,7 +43,7 @@ table {
   th, td {
     padding: 12px 15px;
     text-align: center;
-    border: 1px solid ;
+    border: 1px dotted ;
   }
  
   .show-info a {
@@ -146,20 +146,54 @@ section#description {
     display: block;
 }
 
-/* albums files */
+/* CONTACT.MD */
+#contact-header {
+    margin-top: 70px;
+    font-style: underline;
+    text-align: center;
+
+}
+
+#contact-info {
+    font-size: 8px;
+}
+/* INDEX.MD */
+
+/* SHOWS.MD */
+#show-header {
+    margin-top: 10px;;
+}
+/* MERCH.MD */
+
+/* RELEASES.MD */
+#albums-header {
+    font-size: 35px;
+    margin-bottom: -100px;
+    margin-top: -70px;
+}
+
+
+.album-card {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color the same as parent */
+}
 
 .album-cover {
-    align-items: center; /* Center align everything */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
+
     margin-top: 80px; /* Push it down below the navbar */
 }
 
 .album-title {
     font-family: 'Horizon', sans-serif;
-    color: var(--light-text);
-    font-size: 2rem;
-    /* margin-top: 20px; */
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .credits {
@@ -167,6 +201,10 @@ section#description {
     font-size: 14px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .stream-navbar ul {
     list-style-type: none; /* Remove the default bullet points */
@@ -188,12 +226,7 @@ section#description {
     margin: 5px 0; /* Space between track numbers */
 }
 
-.flex-container {
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
+
 
 .stream-navbar {
     display: none;
@@ -204,9 +237,20 @@ section#description {
     flex-direction: row;
 }
 
-
+/* SHOWS */
 
 @media screen and (max-width: 600px) {
+
+    .album-title {
+        text-align: center;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
 
     #responsiveMenuToggleButton {
         display: block;
